@@ -6,13 +6,13 @@ from typing import AsyncGenerator
 from homeassistant.core import HomeAssistant
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 
-from custom_components.ocpp import (
+from custom_components.ocppint import (
     CentralSystem,
     async_reload_entry,
     async_setup_entry,
     async_unload_entry,
 )
-from custom_components.ocpp.const import DOMAIN
+from custom_components.ocppint.const import DOMAIN
 
 from .const import MOCK_CONFIG_DATA_1
 

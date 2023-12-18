@@ -1,4 +1,4 @@
-"""Switch platform for ocpp."""
+"""Switch platform for ocpppy."""
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -12,7 +12,7 @@ from homeassistant.components.switch import (
 from homeassistant.const import POWER_KILO_WATT
 from homeassistant.helpers.entity import DeviceInfo
 
-from ocpp.v16.enums import ChargePointStatus, Measurand
+from ocpppy.v16.enums import ChargePointStatus, Measurand
 
 from .api import CentralSystem
 from .const import CONF_CPID, DEFAULT_CPID, DOMAIN, ICON

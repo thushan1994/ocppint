@@ -46,7 +46,7 @@ frontend:
 #script: !include scripts.yaml
 #scene: !include scenes.yaml
 
-ocpp:
+ocppint:
   default_authorization_status: 'Invalid'
   authorization_list:
     - id_tag: 'pulsar'

@@ -19,11 +19,11 @@ import voluptuous as vol
 import websockets.connection
 import websockets.server
 
-from ocpp.exceptions import NotImplementedError
-from ocpp.messages import CallError
-from ocpp.routing import on
-from ocpp.v16 import ChargePoint as cp, call, call_result
-from ocpp.v16.enums import (
+from ocpppy.exceptions import NotImplementedError
+from ocpppy.messages import CallError
+from ocpppy.routing import on
+from ocpppy.v16 import ChargePoint as cp, call, call_result
+from ocpppy.v16.enums import (
     Action,
     AuthorizationStatus,
     AvailabilityStatus,

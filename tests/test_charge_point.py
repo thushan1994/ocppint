@@ -15,15 +15,15 @@ import pytest
 from pytest_homeassistant_custom_component.common import MockConfigEntry
 import websockets
 
-from custom_components.ocpp import async_setup_entry, async_unload_entry
-from custom_components.ocpp.button import BUTTONS
-from custom_components.ocpp.const import DOMAIN as OCPP_DOMAIN
-from custom_components.ocpp.enums import ConfigurationKey, HAChargerServices as csvcs
-from custom_components.ocpp.number import NUMBERS
-from custom_components.ocpp.switch import SWITCHES
-from ocpp.routing import on
-from ocpp.v16 import ChargePoint as cpclass, call, call_result
-from ocpp.v16.enums import (
+from custom_components.ocppint import async_setup_entry, async_unload_entry
+from custom_components.ocppint.button import BUTTONS
+from custom_components.ocppint.const import DOMAIN as OCPP_DOMAIN
+from custom_components.ocppint.enums import ConfigurationKey, HAChargerServices as csvcs
+from custom_components.ocppint.number import NUMBERS
+from custom_components.ocppint.switch import SWITCHES
+from ocpppy.routing import on
+from ocpppy.v16 import ChargePoint as cpclass, call, call_result
+from ocpppy.v16.enums import (
     Action,
     AuthorizationStatus,
     AvailabilityStatus,

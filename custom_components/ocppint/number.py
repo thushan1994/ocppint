@@ -1,4 +1,4 @@
-"""Number platform for ocpp."""
+"""Number platform for ocpppy."""
 from __future__ import annotations
 
 from dataclasses import dataclass

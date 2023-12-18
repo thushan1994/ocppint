@@ -1,4 +1,4 @@
-"""Sensor platform for ocpp."""
+"""Sensor platform for ocpppy."""
 from __future__ import annotations
 
 from dataclasses import dataclass

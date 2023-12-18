@@ -4,7 +4,7 @@ from unittest.mock import patch
 from homeassistant import config_entries, data_entry_flow
 import pytest
 
-from custom_components.ocpp.const import (  # BINARY_SENSOR,; PLATFORMS,; SENSOR,; SWITCH,
+from custom_components.ocppint.const import (  # BINARY_SENSOR,; PLATFORMS,; SENSOR,; SWITCH,
     DOMAIN,
 )
 
@@ -20,10 +20,10 @@ from .const import MOCK_CONFIG, MOCK_CONFIG_DATA
 def bypass_setup_fixture():
     """Prevent setup."""
     with patch(
-        "custom_components.ocpp.async_setup",
+        "custom_components.ocppint.async_setup",
         return_value=True,
     ), patch(
-        "custom_components.ocpp.async_setup_entry",
+        "custom_components.ocppint.async_setup_entry",
         return_value=True,
     ):
         yield

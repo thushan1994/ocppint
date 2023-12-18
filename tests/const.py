@@ -1,5 +1,5 @@
 """Constants for ocpp tests."""
-from custom_components.ocpp.const import (
+from custom_components.ocppint.const import (
     CONF_CPID,
     CONF_CSID,
     CONF_FORCE_SMART_CHARGING,

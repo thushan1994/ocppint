@@ -1,5 +1,5 @@
 {
-	"domain": "ocpp",
+	"domain": "ocppint",
 	"name": "Open Charge Point Protocol (OCPP)",
 	"after_dependencies": [
 		"persistent_notification"

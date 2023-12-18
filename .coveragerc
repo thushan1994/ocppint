@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = custom_components/ocpp
+source = custom_components/ocppint
 
 [report]
 exclude_lines =

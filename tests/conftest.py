@@ -22,7 +22,7 @@ def skip_notifications_fixture():
     """Skip notification calls."""
     with patch("homeassistant.components.persistent_notification.async_create"), patch(
         "homeassistant.components.persistent_notification.async_dismiss"
-    ), patch("custom_components.ocpp.api.ChargePoint.notify_ha"):
+    ), patch("custom_components.ocppint.api.ChargePoint.notify_ha"):
         yield
 
 
@@ -45,7 +45,7 @@ def bypass_get_data_fixture():
 def error_get_data_fixture():
     """Simulate error when retrieving data from API."""
     # with patch(
-    #    "custom_components.ocpp.ocppApiClient.async_get_data",
+    #    "custom_components.ocppint.ocppApiClient.async_get_data",
     #    side_effect=Exception,
     # ):
     yield

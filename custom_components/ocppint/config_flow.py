@@ -1,4 +1,4 @@
-"""Adds config flow for ocpp."""
+"""Adds config flow for ocpppy."""
 from homeassistant import config_entries
 import voluptuous as vol
 
