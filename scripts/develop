@@ -17,8 +17,8 @@ if [[ ! -d "${PWD}/config/custom_components" ]]; then
 fi
 
 # copy the ocpp integration
-rm -rf $PWD/config/custom_components/ocpp
-cp -r -l $PWD/custom_components/ocpp $PWD/config/custom_components/
+rm -rf $PWD/config/custom_components/ocppint
+cp -r -l $PWD/custom_components/ocppint $PWD/config/custom_components/
 
 # Start Home Assistant
 hass --config "${PWD}/config" --debug
